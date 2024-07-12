@@ -42,5 +42,5 @@ jobs:
     - name: Upload Artifact
       uses: actions/upload-artifact@v2
       with:
-          name: 1.iso
-          path: 1.iso
+          name: website.zip
+          path: website.zip
