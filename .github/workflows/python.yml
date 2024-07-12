@@ -1,8 +1,9 @@
 name: Deploy and Release  
   
-on:  
-  push:  
-    branches: [ main ]  
+on:
+  workflow_dispatch:
+  schedule:
+    - cron: '00 23 * * *' 
   
 jobs:  
   build:  
