@@ -3,3 +3,8 @@ Path
 asyncio
 argparse
 requests
+urllib
+os
+functool
+sargparse
+sys
