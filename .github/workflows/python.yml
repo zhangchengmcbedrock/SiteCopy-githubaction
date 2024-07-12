@@ -31,14 +31,13 @@ jobs:
     - name: Run Python script  
       shell: bash  
       run: |  
-        python sitecopy.py -u "https://blog.snowy.moe/" -e -d 200 -t 30  
+        python sitecopy.py -u "https://blog.snowy.moe/" -e -d 500 -t 50  
   
     # 打包文件  
     - name: Zip files  
       shell: bash  
       run: |  
-        # 假设我们要打包的目录是 ./output  
-        Compress-Archive -Path ./output/* -DestinationPath ./output.zip  
+        tar -cvf [website].tar [website]
   
     # 发布到GitHub Release  
     - name: Create Release  
