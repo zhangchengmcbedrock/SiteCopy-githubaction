@@ -25,7 +25,7 @@ jobs:
       run: |  
         echo "Installing dependencies..."  
         python -m pip install --upgrade pip  
-        pip install bs4 Path argparse
+        pip install bs4 Path argparse requests
   
     # 运行Python脚本  
     - name: Run Python script  
