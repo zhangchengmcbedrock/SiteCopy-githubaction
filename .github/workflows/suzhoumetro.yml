@@ -1,4 +1,4 @@
-name:  foreverblog
+name:  suzhoumetro
   
 on:
   workflow_dispatch:
@@ -31,7 +31,7 @@ jobs:
     - name: Run Python script  
       shell: bash  
       run: |  
-        python sitecopy.py -u "https://www.foreverblog.cn/" -e -d 10 -t 50  
+        python sitecopy.py -u "https://suzhoumetro.fandom.com/zh/wiki/%E8%8B%8F%E5%B7%9E%E5%9F%8E%E5%B8%82%E8%BD%A8%E9%81%93%E4%BA%A4%E9%80%9A_Wiki" -e -d 10 -t 50  
   
     # 打包文件  
     - name: Zip files  
