@@ -31,7 +31,7 @@ jobs:
     - name: Run Python script  v
       shell: bash  
       run: |  
-        python sitecopy.py -u "https://api.jb996.cn/" -e -d 1000 -t 50  
+        python sitecopy.py -u "https://shqibaoxindu.fandom.com/zh/wiki/%E4%B8%8A%E6%B5%B7%E5%B8%82%E4%B8%83%E5%AE%9D%E4%B8%AD%E5%AD%A6%E9%99%84%E5%B1%9E%E9%91%AB%E9%83%BD%E5%AE%9E%E9%AA%8C%E4%B8%AD%E5%AD%A6_Wiki" -e -d 1000 -t 50  
   
     # 打包文件  
     - name: Zip files  
