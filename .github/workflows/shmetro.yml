@@ -1,4 +1,4 @@
-name: snowy-moe 
+name: shmetro 
   
 on:
   workflow_dispatch:
@@ -31,7 +31,7 @@ jobs:
     - name: Run Python script  
       shell: bash  
       run: |  
-        python sitecopy.py -u "https://snowy.moe/" -e -d 1000 -t 50  
+        python sitecopy.py -u "https://shmetro.fandom.com/zh/wiki/%E4%B8%8A%E6%B5%B7%E5%9F%8E%E5%B8%82%E8%BD%A8%E9%81%93%E4%BA%A4%E9%80%9A_Wiki" -e -d 1000 -t 50  
   
     # 打包文件  
     - name: Zip files  
