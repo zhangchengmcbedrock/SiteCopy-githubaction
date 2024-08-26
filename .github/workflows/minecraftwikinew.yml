@@ -1,0 +1,46 @@
+name: Minecraft wiki new
+  
+on:
+  workflow_dispatch:
+  schedule:
+    - cron: '00 18 * * *' 
+  
+jobs:  
+  build:  
+    runs-on: ubuntu-latest  
+  
+    steps:  
+    - uses: actions/checkout@v2  
+  
+    # 安装Python  
+    - uses: actions/checkout@v3
+    - name: Set up Python 3.12
+      uses: actions/setup-python@v3
+      with:
+        python-version: "3.12" 
+  
+    # 安装依赖  
+    - name: Install dependencies  
+      shell: bash  
+      run: |  
+        echo "Installing dependencies..."  
+        python -m pip install --upgrade pip  
+        pip install bs4 Path argparse requests
+  
+    # 运行Python脚本  
+    - name: Run Python script  
+      shell: bash  
+      run: |  
+        python sitecopy.py -u "https://zh.minecraft.wiki" -e -d 1000 -t 50  
+  
+    # 打包文件  
+    - name: Zip files  
+      shell: bash  
+      run: |  
+        zip -r website.zip website
+  
+    - name: Upload Artifact
+      uses: actions/upload-artifact@v2
+      with:
+          name: website.zip
+          path: website.zip
