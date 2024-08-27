@@ -1,4 +1,4 @@
-name: \mtr
+name: shedu
   
 on:
   workflow_dispatch:
@@ -31,7 +31,7 @@ jobs:
     - name: Run Python script  
       shell: bash  
       run: |  
-        python sitecopy.py -u "https://hkrail.fandom.com/wiki/%E6%B8%AF%E9%90%B5" -e -d 1000 -t 50  
+        python sitecopy.py -u "https://shedu.fandom.com/zh" -e -d 1000 -t 50  
   
     # 打包文件  
     - name: Zip files  
