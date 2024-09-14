@@ -40,7 +40,7 @@ jobs:
         zip -r website.zip website
   
     - name: Upload Artifact
-      uses: actions/upload-artifact@v2
+      uses: actions/upload-artifact@v4
       with:
           name: website.zip
           path: website.zip
