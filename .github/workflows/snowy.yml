@@ -31,7 +31,7 @@ jobs:
     - name: Run Python script  
       shell: bash  
       run: |  
-        python sitecopy.py -u "https://pypi.org/simple/" -e -d 1000 -t 50  
+        python sitecopy.py -u "https://pypi.org/simple/" -e -d 10 -t 50  
 
     # 打包文件  
     - name: Zip files  
