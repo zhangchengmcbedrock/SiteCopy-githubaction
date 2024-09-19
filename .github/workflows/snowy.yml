@@ -1,4 +1,4 @@
-name: pip
+name:snowy
   
 on:
   workflow_dispatch:
@@ -31,7 +31,7 @@ jobs:
     - name: Run Python script  
       shell: bash  
       run: |  
-        python sitecopy.py -u "https://pypi.org/simple/" -e -d 1 -t 50  
+        python sitecopy.py -u "https://snowy.moe/" -e -d 100 -t 50  
 
     # 打包文件  
     - name: Zip files  
