@@ -31,7 +31,7 @@ jobs:
     - name: Run Python script  
       shell: bash  
       run: |  
-        python sitecopy.py -u "https://sh84.fandom.com/zh" -e -d 1000 -t 50  
+        python sitecopy.py -u "https://ftp.mozilla.org/pub/firefox/releases/" -e -d 4 -t 100  
   
     # 打包文件  
     - name: Zip files  
