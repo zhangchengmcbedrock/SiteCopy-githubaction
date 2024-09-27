@@ -1,4 +1,4 @@
-name: szmetro 
+name: microsoft
   
 on:
   workflow_dispatch:
