@@ -5,7 +5,7 @@ name:snowy
   schedule：
     - cron： '00 20 * * *' 
   
-jobs:  
+jobs:
   build:  
     runs-on: ubuntu-latest  
   
