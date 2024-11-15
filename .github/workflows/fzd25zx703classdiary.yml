@@ -44,3 +44,10 @@ jobs:
       with:
           name: website.zip
           path: website.zip
+
+    - name: Release
+      uses: softprops/action-gh-release@v2
+      with:
+        files: |
+          website.zip
+        tag_name: fzd25zx703classdiary
