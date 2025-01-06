@@ -31,7 +31,7 @@ jobs:
     - name: Run Python script  v
       shell: bash  
       run: |  
-        python sitecopy.py -u "https://qbxd.qinzhengyuqszzlyj.us.kg/sitecopy" -e -d 1000 -t 50  
+        python sitecopy.py -u "https://qb3z.qinzhengyuqszzlyj.us.kg/sitecopy" -e -d 1000 -t 50  
   
     # 打包文件  
     - name: Zip files  
