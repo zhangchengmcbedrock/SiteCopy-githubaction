@@ -1,0 +1,53 @@
+name: shqibaoxindu
+  
+on:
+  workflow_dispatch:
+  schedule:
+    - cron: '00 23 * * *' 
+  
+jobs:  
+  build:  
+    runs-on: ubuntu-latest  
+  
+    steps:  
+    - uses: actions/checkout@v2  
+  
+    # 安装Python  
+    - uses: actions/checkout@v3
+    - name: Set up Python 3.12
+      uses: actions/setup-python@v3
+      with:
+        python-version: "3.12" 
+  
+    # 安装依赖  
+    - name: Install dependencies  
+      shell: bash  
+      run: |  
+        echo "Installing dependencies..."  
+        python -m pip install --upgrade pip  
+        pip install bs4 Path argparse requests
+  
+    # 运行Python脚本  
+    - name: Run Python script  v
+      shell: bash  
+      run: |  
+        wget --mirror --convert-links --adjust-extension --page-requisites --no-parent -P / https://qbxd.qinzhengyuqszzlyj.us.kg/sitecopy 
+  
+    # 打包文件  
+    - name: Zip files  
+      shell: bash  
+      run: |  
+        zip -r qbxdqinzhengyuqszzlyjuskg.zip qbxd.qinzhengyuqszzlyj.us.kg
+  
+    - name: Upload Artifact
+      uses: actions/upload-artifact@v4
+      with:
+          name: qbxdqinzhengyuqszzlyjuskg.zip
+          path: qbxdqinzhengyuqszzlyjuskg.zip
+
+    - name: Release
+      uses: softprops/action-gh-release@v2
+      with:
+        files: |
+          qbxdqinzhengyuqszzlyjuskg.zip
+        tag_name: shqibaoxindu
