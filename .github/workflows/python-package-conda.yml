@@ -1,4 +1,4 @@
-name: shqibaoxindu
+name: shqibaoxindu-wget
   
 on:
   workflow_dispatch:
