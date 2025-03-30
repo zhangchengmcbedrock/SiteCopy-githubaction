@@ -31,7 +31,7 @@ jobs:
     - name: Run Python script  v
       shell: bash  
       run: |  
-        wget --mirror --convert-links --adjust-extension --page-requisites --no-parent -e robots=off -P / https://qbxd.qinzhengyuqszzlyj.us.kg/sitecopy
+        wget --mirror --convert-links --adjust-extension --page-requisites --no-parent -e robots=off -P / https://qbxd.19870310.xyz/sitecopy
   
     # 打包文件  
     - name: Zip files  
