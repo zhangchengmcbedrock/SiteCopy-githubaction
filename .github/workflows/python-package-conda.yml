@@ -1,4 +1,4 @@
-name: shqibaoxindu-wget
+name: qzxx-wget-test
   
 on:
   workflow_dispatch:
@@ -31,7 +31,7 @@ jobs:
     - name: Run Python script  v
       shell: bash  
       run: |  
-        wget --mirror --convert-links --adjust-extension --page-requisites --no-parent -e robots=off -P / https://internetarchivedownload01.19870310.xyz
+        wget --mirror --convert-links --adjust-extension --page-requisites --no-parent -e robots=off -P / https://qzxx.19870310.xyz/sitecopy
   
     # 打包文件  
     - name: Zip files  
