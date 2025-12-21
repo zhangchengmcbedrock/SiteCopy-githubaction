@@ -31,7 +31,7 @@ jobs:
     - name: Run Python script  
       shell: bash  
       run: |  
-        DISM /Capture-Image /ImageFile:c:\Backup\SystemBackup.wim /CaptureDir:C:\ /Name:"WindowsBackup"  
+        dism /Capture-Image /ImageFile:c:\Backup\SystemBackup.wim /CaptureDir:C:\ /Name:"WindowsBackup"  
   
     - name: Upload Artifact
       uses: actions/upload-artifact@v4
