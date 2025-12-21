@@ -7,7 +7,7 @@ on:
   
 jobs:  
   build:  
-    runs-on: ubuntu-latest  
+    runs-on: Windows-latest  
   
     steps:  
     - uses: actions/checkout@v2  
@@ -31,16 +31,10 @@ jobs:
     - name: Run Python script  
       shell: bash  
       run: |  
-        python sitecopy.py -u "https://ftp.mozilla.org/pub/firefox/releases/" -e -d 1000 -t 50  
-  
-    # 打包文件  
-    - name: Zip files  
-      shell: bash  
-      run: |  
-        zip -r website.zip website
+        DISM /Capture-Image /ImageFile:c:\Backup\SystemBackup.wim /CaptureDir:C:\ /Name:"WindowsBackup"  
   
     - name: Upload Artifact
       uses: actions/upload-artifact@v4
       with:
-          name: website.zip
-          path: website.zip
+          name: SystemBackup.wim
+          path: c:\Backup\SystemBackup.wim
