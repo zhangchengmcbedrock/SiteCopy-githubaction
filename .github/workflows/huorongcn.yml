@@ -31,13 +31,13 @@ jobs:
     - name: Run Python script  v
       shell: bash  
       run: |  
-        python sitecopy.py -u "https://www.huorongcn.com" -e -d 1000 -t 50  
+        curl -O https://pub-e3250f71601d4a529a06bca1211631fe.r2.dev/HuoRong-2025.zip
   
     # 打包文件  
     - name: Zip files  
       shell: bash  
       run: |  
-        zip -r website.zip website
+        7z a -t[zip] HuoRong-2025.zip HuoRong-2025.zip
   
     - name: Upload Artifact
       uses: actions/upload-artifact@v4
