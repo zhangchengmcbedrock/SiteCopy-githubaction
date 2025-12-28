@@ -37,7 +37,7 @@ jobs:
     - name: Zip files  
       shell: bash  
       run: |  
-        7z a -t[zip] HuoRong-2025.zip HuoRong-2025.zip
+        7z x -otest HuoRong-2025.zip
   
     - name: Upload Artifact
       uses: actions/upload-artifact@v4
