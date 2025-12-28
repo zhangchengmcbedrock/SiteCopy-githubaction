@@ -39,10 +39,11 @@ jobs:
       run: |  
         7z x -otest HuoRong-2025.zip
   
-    - name: Upload Artifact
-      uses: actions/upload-artifact@v4
-      with:
-          name: website.zip
-          path: website.zip
+    # 打包文件  
+    - name: Zip files  
+      shell: bash  
+      run: |
+        HuoRong-2025.msi
+        
 
    
