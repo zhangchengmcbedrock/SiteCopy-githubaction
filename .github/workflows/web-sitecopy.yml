@@ -24,6 +24,6 @@ jobs:
     - name: Run Python script  v
       shell: bash  
       run: |  
-        "/sitecopy bash/sitecopy-web.bat"
+        /sitecopybash/sitecopy-web.bat
   
    
