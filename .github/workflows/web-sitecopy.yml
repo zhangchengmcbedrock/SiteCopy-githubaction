@@ -23,6 +23,6 @@ jobs:
     # 运行sitecopy脚本  
     - name: Run sitecopy-web.bat
       shell: cmd
-      run: D:\a\SiteCopy-githubaction\sitecopy-web.bat
+      run: D:\a\SiteCopy-githubaction\sitecopy-web.cmd
   
    
