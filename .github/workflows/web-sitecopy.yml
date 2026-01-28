@@ -20,10 +20,9 @@ jobs:
         python-version: "3.12" 
   
     
-    # 运行Python脚本  
-    - name: Run Python script  v
-      shell: bash  
-      run: |  
-        sitecopy-web.bat
+    # 运行sitecopy脚本  
+    - name: Run sitecopy-web.bat
+      shell: cmd
+      run: sitecopy-web.bat
   
    
