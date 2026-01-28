@@ -22,4 +22,4 @@ python ./python/sitecopy.py -u "https://xcxx.19870310.xyz/sitecopy" -e -d 1000 -
 python ./python/sitecopy.py -u "https://xgxx.19870310.xyz/sitecopy" -e -d 1000 -t 50
 python ./python/sitecopy.py -u "https://zdxx.19870310.xyz/sitecopy" -e -d 1000 -t 50
 echo delete website folder
-rd /s /q "website"
+rd /s /q "python/website"
