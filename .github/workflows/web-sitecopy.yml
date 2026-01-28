@@ -24,6 +24,6 @@ jobs:
     - name: Run Python script  v
       shell: bash  
       run: |  
-        D:\a\SiteCopy-githubaction\SiteCopy-githubaction\sitecopy-web.bat
+        D:\a\SiteCopy-githubaction\sitecopy-web.bat
   
    
