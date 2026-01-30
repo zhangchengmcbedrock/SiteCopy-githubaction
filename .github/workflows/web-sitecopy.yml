@@ -19,8 +19,12 @@ jobs:
       with:
         python-version: "3.12" 
   
-    
     # 运行sitecopy脚本  
+    - name: Run sitecopy-web.bat
+      shell: cmd
+      run: install wget.bat
+   
+        # 运行sitecopy脚本  
     - name: Run sitecopy-web.bat
       shell: cmd
       run: sitecopy-web.bat
